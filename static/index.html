@@ -15,7 +15,43 @@
             <textarea id="newsText" placeholder="Collez votre news ici..."></textarea>
             <button onclick="predict()">Vérifier</button>
             <h2 id="result"></h2>
-            </div>
+        </div>
+
+<div class="container description">
+    <h2>About the application</h2>
+    <p>
+        This application uses a <strong>2017 news dataset</strong>. 
+        It can detect if a news article is <strong>real</strong> or <strong>fake</strong> based on data available in 2017.
+    </p>
+</div>
+
+
+<div class="container examples">
+    <h2>Test news examples</h2>
+
+
+    <div class="news-example">
+        <p><strong>🟢 REAL NEWS (2017)</strong></p>
+        <p>
+            <strong>Title / Text:</strong><br>
+            Donald Trump formally withdrew the United States from the Trans-Pacific Partnership trade agreement on Monday, fulfilling a campaign promise and dealing a blow to a pact designed to counter China’s economic influence in the Asia-Pacific region.
+        </p>
+        <p>👉 Expected Label: True / 1<br>👉 Real source at the time: Reuters (January 2017)</p>
+        <button class="copy-btn" onclick="copyToTextarea(this)">Copy</button>
+    </div>
+
+    <div class="news-example">
+        <p><strong>🔴 FAKE NEWS (2017)</strong></p>
+        <p>
+            <strong>Title / Text:</strong><br>
+            BREAKING: Pope Francis shocks world, endorses Donald Trump for president, releases statement saying Trump is the only one who can save America.
+        </p>
+        <p>👉 Expected Label: Fake / 0<br>👉 This fake news circulated heavily on Facebook in 2016–2017</p>
+        <button class="copy-btn" onclick="copyToTextarea(this)">Copy</button>
+    </div>
+
+</div>
+
 
         <script src="/static/script.js"></script>
     </body>

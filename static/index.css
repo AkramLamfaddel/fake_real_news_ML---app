@@ -123,6 +123,38 @@ footer span:hover {
     text-shadow: 0 0 8px rgba(0,129,243,0.8);
 }
 
+.news-example {
+    background: #0d0d0d;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0,129,243,0.3);
+    color: #fff;
+    position: relative;
+}
+
+.news-example p {
+    margin: 8px 0;
+}
+
+.copy-btn {
+    margin-top: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #081286;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.copy-btn:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0,129,243,0.6);
+}
+
+
 @media (max-width: 768px) {
 
     body {
@@ -166,7 +198,25 @@ footer span:hover {
     h2 {
         font-size: 16px;
     }
+    
+     .news-example {
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 14px; /* texte plus petit pour mobile */
+        box-shadow: 0 0 8px rgba(0,129,243,0.3);
+    }
 
+    .news-example p {
+        margin: 6px 0;
+    }
+
+    .copy-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+        width: 100%; /* bouton plein largeur pour mobile */
+        box-sizing: border-box;
+    }
+    
     footer {
         margin-top: 15px;
         font-size: 12px;
